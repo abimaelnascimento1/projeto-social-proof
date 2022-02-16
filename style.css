@@ -1,0 +1,180 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Spartan', Arial, Helvetica, sans-serif;
+    background-image: url('images/bg-pattern-top-desktop.svg'), url('images/bg-pattern-bottom-desktop.svg');
+}
+
+/* PARTE DE CIMA HEAD */
+
+.head{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 50px 08%;
+    align-items: center;
+}
+
+.head-son{
+    width: 450px;
+}
+
+.head-son h1{
+    color: hsl(300, 43%, 22%);
+    font-size: 35px;
+    display: flex;
+
+}
+
+.head-son2{
+    width: 400px;
+    margin: 20px 0;
+}
+
+.head-son2 p{
+    padding-left: 10px;
+    color: hsl(300, 43%, 22%);
+
+}
+
+.stars{
+    display: flex;
+    padding: 12px;
+    background-color: lightgray;
+    margin: 8px 5px;
+    border-radius: 7px;
+}
+
+.stars img{
+    padding-left: 6px;
+    align-items: center;
+    /* width: 5%; */
+    /* height: 5%; */
+}
+
+.stars p{
+    font-size: 0.8em;
+    font-weight: bold;
+    margin: 0 10px;
+    align-items: center;
+}
+
+
+
+
+/* PARTE DE BAIXO */
+
+
+.mid-content{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px 8%;
+    justify-content: space-between;
+}
+
+.box{
+    height: 220px;
+    width: 380px;
+    background-color: hsl(300, 43%, 22%);
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.box p{
+    font-size: 13px;
+    text-align: justify;
+    font-weight: 500;
+    color: rgba(255, 255, 255, 0.788);
+}
+
+.box-son{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    /* justify-content: ; */
+}
+
+.box-son img{
+    width: 15%;
+    border-radius: 30px;
+}
+
+.padding{
+    padding-left: 20px;
+}
+
+#fontstyle{
+    color: hsl(333, 80%, 67%);
+    font-weight: 200;
+}
+
+
+
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1352px){
+    .box{
+        width: 360px
+    }
+}
+
+@media screen and (max-width: 1299px){
+    .box{
+        width: 305px
+    }
+}
+
+@media screen and (max-width: 1091px){
+    .box{
+        width: 290px
+    }
+}
+
+@media screen and (max-width: 1030px){
+    .box{
+        width: 280px
+    }
+}
+
+@media screen and (max-width: 999px){
+    .mid-content{
+        flex-direction: column;
+    }
+
+    .stars{
+        display: block;
+        text-align: center;
+    }
+    
+}
+
+@media screen and (max-width: 400px){
+    .mid-content p{
+        text-align: center;
+    }
+
+    .head-son h1{
+        text-align: center;
+    }
+
+    .head-son p{
+        text-align: center;
+    }
+
+    .head-son2{
+        justify-content: center;
+    }
+    
+    .stars{
+        display: block;
+        text-align: center;
+        width: 280px;
+    }
+}
+
